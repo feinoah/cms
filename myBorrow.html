@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>我的借款</title>
+		<link type="text/css" rel="stylesheet" href="css/screen.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    </head>
+    <body>
+    	<div class="wrapBox">
+	    	<div class="topDiv">
+	    		<div class="topBox clearfix">
+	    			<div class="topLeft left">
+	    				<p class="left">客服热线：</p>
+	    				<img src="images/iphone.png" height="18" width="128">
+	    				<span>(工作日9:00 - 18:00)  </span>
+	    			</div>
+	    			<div class="topRight right">
+	    				<ul>
+	    					<li class="act"><a href="login.html">登录</a></li>
+	    					<li class="act"><a href="register.html">免费注册</a></li>
+	    					<li><a href="#">我的账户</a></li>
+	    					<li><a href="#">帮助中心</a></li>
+	    					<li><a href="#">联系我们</a></li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="header">
+	    		<div class="inHeader clearfix">
+	    			<img class="left" src="images/logo.png" height="64" width="367">
+	    			<ul class="right navList">
+	    				<li><a href="#">首页</a></li>
+	    				<li><a href="#">我要投资</a></li>
+	    				<li><a href="#">走进悠兔</a></li>
+	    				<li><a href="#">公司动态</a></li>
+	    			</ul>
+	    		</div>
+	    	</div>
+
+	    	<div class="account">
+    			<div class="myAccount clearfix">
+    				<div class="left accountLeft">
+    					<h5>用户名：15190561722</h5>
+    					<div class="headImg">
+    						<img src="images/headimg.png">
+    					</div>
+   						<ul class="usericon mt-1-5 clearfix">
+   							<li class="icon1">
+   								<a href="#"></a>
+								<p>手机认证</p>
+   							</li>
+    						<li class="icon2">
+    							<a href="#"></a>
+    							<p>绑定银行卡</p>
+    						</li>
+                            <li class="act icon3">
+                                <a href="#"></a>
+                                <p>绑定邮箱</p>
+                            </li>
+    					</ul>
+    					<div class="sidebar">
+				    		<div class="leftbar flearfix">
+				    			<ul class="barul">
+                                    <li >
+                                        <a href="accountCenter.html">
+                                            <p>账户中心</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="financialDetails.html">
+                                            <p>资金明细</p>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <p>投资管理</p>
+                                        <ol class="barOL">
+                                            <li><a href="productInvestment.html">产品管理</a></li>
+                                            <li><a href="standardInvestment.html">散标投资</a></li>
+                                            <li><a href="creditorInvestment.html">债权转让</a></li>
+                                            <li><a href="experienceInvestment.html">体验标</a></li>
+                                            <li><a href="autoInvest.html">自动投标</a></li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <a href="accountMyBorrow.html">
+                                            <p>借款管理</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <p>个人管理</p>
+                                        <ol class="barOL">
+                                            <li><a href="messageCenter.html">消息中心</a></li>
+                                            <li ><a href="safeCenter.html">安全中心</a></li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>我的福利</p>
+                                        <ol class="barOL" >
+                                            <li><a href="">活动列表</a></li>
+                                            <li><a href="inviteFriends.html">邀请好友</a></li>
+                                            <li><a href="experienceGold.html">体验金</a></li>
+                                            <li><a href="coupon.html">加息券</a></li>
+                                        </ol>
+                                    </li>
+				    				<li class="current">
+				    					<p>企业会员</p>
+				    					<ol class="barOL" style="display:block">
+				    						<li><a href="businessAccount.html">企业账户</a></li>
+				    						<!--<li><a href="needBorrow.html">我要借款</a></li>-->
+				    						<li class="act"><a href="myBorrow.html">我的借款</a></li>
+				    					</ol> 
+				    				</li>
+				    			</ul>
+				    		</div>
+				    	</div>
+    				</div>
+    				<div class="left accountRight">
+    					<div class="rightHeader clearfix">
+    						<p class="left ml-2"> 我的账户 > 企业会员 > <a href="myBorrow.html" class="act">我的借款</a></p>
+    						<p class="right mr-5">上海金互行金融信息服务有限公司</p>
+    					</div>
+    					<div class="rightContent" style="padding-top:0;">
+    						<div class="mybrwhd">
+                                <ul class="clearfix">
+                                    <li class="current">我的借款</li>
+                                    <li>待还明细</li>
+                                </ul>                  
+                            </div>
+                            <div class="mybrwbd">
+                                <ul>
+                                    <li  class="clearfix">
+                                        <div class="h-68">
+                                            <table class="tableBase">
+                                                <thead>
+                                                <tr>
+                                                    <th width="90">操作</th>
+                                                    <th width="63">合同</th>
+                                                    <th width="68">发标日期</th>
+                                                    <th width="87">到账日期</th>
+                                                    <th width="77">借款金额</th>
+                                                    <th width="122">预期年化收益率</th>
+                                                    <th width="76">借款标题</th>
+                                                    <th width="95">期数/期限</th>
+                                                    <th width="84">标的状态</th>
+                                                    <th width="65">备注</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody class="align-c">
+                                                <tr>
+                                                    <td class="borrow-td">
+                                                        <a href="#" class="borrowDetail">应还详情</a><br/>
+                                                        <a href="#" class="borrowBtnInfo">借款人信息</a>
+                                                    </td>
+                                                    <td style="color:#8cc152; cursor:pointer;">查看</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="borrow-td">
+                                                        <a href="#" class="borrowDel">删除</a><br/>
+                                                        <a href="#" class="borrowBtnInfo">借款人信息</a>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <ol class="paging" >
+                                            <li><a href="#"><</a></li>
+                                            <li class="current"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">></a></li>
+                                        </ol>
+                                    </li>
+                                    <li class="clerrfix" style="display:none;">
+                                        <div class="h-68">
+                                            <table class="align-c tableBase">
+                                                <thead>
+                                                <tr>
+                                                    <th width="71">操作</th>
+                                                    <th width="82">标的名称</th>
+                                                    <th width="65">期数</th>
+                                                    <th width="83">应还本金</th>
+                                                    <th width="86">应还利息</th>
+                                                    <th width="93">应还日期</th>
+                                                    <th width="93">实还日期</th>
+                                                    <th width="91">逾期天数</th>
+                                                    <th width="55">罚息</th>
+                                                    <th width="107">应收状态</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;" class="borrow-money">还款</a>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;" class="borrow-money">还款</a>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;" class="borrow-money">还款</a>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;" class="borrow-money">还款</a>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <ol class="paging" >
+                                            <li><a href="#"><</a></li>
+                                            <li class="current"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">></a></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+    					</div>
+    				</div>
+    			</div>
+	    	</div>
+
+            <div class="footerBox">
+                <div class="footerMa clearfix">
+                    <div class="footerLf left">
+                        <p>400-820-3122</p>
+                        <span class="pl-1">客服热线 (工作日：9:00 - 18:00) </span>
+                    </div>
+                    <div class="footerCt left">
+                        <div class="pl-8-5 footerCtP mb-2">
+                            关注我们:
+                            <a href="javascript:;" class="ml-1 weibo"><img src="images/weibo.png"></a>
+                            <a href="javascript:;" class="ml-1 weChat">
+                                <img src="images/weixin.png">
+                                <div class="weChatDiv">
+                                    <img src="images/u2erweima.png" />
+                                    <p>关注订阅号</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <ul class="clearfix pl-8-5">
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">联系我们</a></li>
+                            <li><a href="javascript:;">走进悠兔</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerRt left">
+                        <div class="download">
+                            <a href="appDownload.html">
+                                <i></i>
+                                <p>下载悠兔理财APP</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyRight">
+                    <p>沪ICP备16007640号-2 | Copyright © 2016 u2licai. All rights reserved</p>
+                </div>
+            </div>
+
+            <!--右边的悬浮按钮-->
+            <div class="baseRight">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>计算器</dd>
+                            </dl>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>APP下载</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>意见反馈</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>联系客服</dd>
+                            </dl>
+                        </a>
+                    </li>-->
+                    <li class="topto" style="display:none;">
+                        <dl>
+                            <dt></dt>
+                            <dd>回到顶部</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+    	</div>
+
+	  <!-- 弹窗结构代码   -->
+      <!-- 应还详情弹窗 -->
+        <div class="borrow-detail">
+            <div class="layerHeader">
+                <p>提示</p>
+                <i></i>
+            </div>
+            <table class="tableBase">
+                <thead>
+                    <tr>     
+                        <th width="81">期数</th>
+                        <th width="84">应还本金</th>
+                        <th width="91">应还利息</th>
+                        <th width="95">应还日期</th>
+                        <th width="99">实还日期</th>
+                        <th width="92">逾期天数</th>
+                        <th width="71">罚息</th>
+                        <th width="117">应收状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>                          
+                        <td>4</td>
+                        <td>¥100.00</td>
+                        <td>¥20.00</td>
+                        <td>2016-07-01</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>未还</td>
+                    </tr>
+                    <tr style="color:#999;">                          
+                        <td>4</td>
+                        <td>¥100.00</td>
+                        <td>¥20.00</td>
+                        <td>2016-07-01</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>未还</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 借款人信息弹窗 -->
+        <div class="borrow-info">
+            <div class="layerHeader">
+                <p>借款人信息</p>
+                <i></i>
+            </div>
+            <div class="tableInfo">
+                <table class="tablelayer tableBase">
+                    <thead>
+                       <tr>
+                           <th>姓名</th>
+                           <th>手机号码</th>
+                           <th>身份证号</th>
+                           <th>性别</th>
+                           <th>年龄</th>
+                           <th>学历</th>
+                           <th>婚姻状况</th>
+                           <th>子女状况</th>
+                           <th>户籍城市</th>
+                           <th>学历</th>
+                           <th>婚姻状况</th>
+                           <th>子女状况</th>
+                           <th>户籍城市</th>
+                           <th>学历</th>
+                           <th>婚姻状况</th>
+                           <th>子女状况</th>
+                           <th>户籍城市</th>
+                           <th>户籍城市</th>
+                           <th>学历</th>
+                           <th>婚姻状况</th>
+                           <th>子女状况</th>
+                           <th>户籍城市</th>
+                       </tr>
+                    </thead>
+                    <tbody class="align-c">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+      <!-- 删除弹窗 -->
+      <div class="borrow-del">
+          <div class="layerHeader">
+                <p>提示</p>
+                <i></i>
+          </div>
+          <div class="moneyContent">
+              <p>确认删除吗？</p>
+              <div class="mt-8 money-btn">
+                  <a href="#">确 认</a>
+                  <a href="#">取 消</a>
+              </div>
+          </div>
+      </div>
+
+        <!-- 应还弹窗 -->
+      <div class="money-layer">
+          <div class="layerHeader">
+                <p>提示</p>
+                <i></i>
+          </div>
+          <div class="moneyContent">
+              <p>确认还款？</p>
+              <div class="mt-8 money-btn">
+                  <a href="#">确 认</a>
+                  <a href="#" class="abc">取 消</a>
+              </div>
+          </div>
+      </div>
+    <script type="text/javascript" src="/js/sea/sea.js"></script>
+    <script type="text/javascript" src="/js/sea-config.js"></script>
+    <script type="text/javascript">
+	    $(function() {
+	    	seajs.use(['style','layer','layer_css'],function(obj){
+
+            	obj.sidebarTab();
+                obj.baseSide();
+                obj.mainContent();
+                //应还详情
+                $('.borrowDetail').on("click",function(){
+                    var moneyLayer = layer.open({
+                      type: 1,
+                      title: false,
+                      closeBtn: 0,
+                      shade: [0.8, '#393D49'],
+                      shadeClose: false,
+                      skin: 'yourclass',
+                      area: ['739px', '485px'],
+                      content: $('.borrow-detail') 
+                    });
+
+                    $('.layerHeader i').on('click', function(){
+                        layer.close(moneyLayer);
+                    });
+                })
+
+                //借款人信息
+                $('.borrowBtnInfo').on("click",function(){
+                    var infoLayer = layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        shade: [0.8, '#393D49'],
+                        shadeClose: false,
+                        skin: 'yourclass',
+                        area: ['750px', '485px'],
+                        content: $('.borrow-info')
+                    });
+
+                    $('.layerHeader i').on('click', function(){
+                        layer.close(infoLayer);
+                    });
+                })
+
+
+                 //删除弹窗
+                $('.borrowDel').on("click",function(){
+                    var moneyLayer = layer.open({
+                      type: 1,
+                      title: false,
+                      closeBtn: 0,
+                      shade: [0.8, '#393D49'],
+                      shadeClose: false,
+                      skin: 'yourclass',
+                      area: ['500px', '305px'],
+                      content: $('.borrow-del') 
+                    });
+
+                    $('.money-btn a,.layerHeader i').on('click', function(){
+                        layer.close(moneyLayer);
+                    });
+                })
+
+                //应还弹窗
+                $('.borrow-money').click(function(){
+                    var moneyLayer = layer.open({
+                      type: 1,
+                      title: false,
+                      closeBtn: 0,
+                      shade: [0.8, '#393D49'],
+                      shadeClose: false,
+                      skin: 'yourclass',
+                      area: ['500px', '305px'],
+                      content: $('.money-layer') 
+                    });
+
+                    $('.money-btn .abc,.layerHeader i').one('click', function(){
+                        layer.close(moneyLayer);
+                        console.log(1);
+                        $('.money-btn a,.layerHeader i').unbind( "click" )
+                    });
+
+
+
+                })
+        	})
+
+
+	    });	    
+    </script>
+    </body>
+</html>

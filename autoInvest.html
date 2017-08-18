@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>自动投标</title>
+		<link type="text/css" rel="stylesheet" href="css/screen.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    </head>
+    <body>
+    	<div class="wrapBox">
+	    	<div class="topDiv">
+	    		<div class="topBox clearfix">
+	    			<div class="topLeft left">
+	    				<p class="left">客服热线：</p>
+	    				<img src="images/iphone.png" height="18" width="128">
+	    				<span>(工作日9:00 - 18:00)  </span>
+	    			</div>
+	    			<div class="topRight right">
+	    				<ul>
+	    					<li class="act"><a href="logoin.html">登录</a></li>
+	    					<li class="act"><a href="register.html">免费注册</a></li>
+	    					<li><a href="#">我的账户</a></li>
+	    					<li><a href="#">帮助中心</a></li>
+	    					<li><a href="#">联系我们</a></li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="header">
+	    		<div class="inHeader clearfix">
+	    			<img class="left" src="images/logo.png" height="64" width="367">
+	    			<ul class="right navList">
+	    				<li><a href="#">首页</a></li>
+	    				<li><a href="#">我要投资</a></li>
+	    				<li><a href="#">走进悠兔</a></li>
+	    				<li><a href="#">公司动态</a></li>
+	    			</ul>
+	    		</div>
+	    	</div>
+
+	    	<div class="account">
+    			<div class="myAccount clearfix">
+    				<div class="left accountLeft">
+    					<h5>用户名：15190561722</h5>
+    					<div class="headImg">
+    						<img src="images/headimg.png">
+    					</div>
+   						<ul class="usericon mt-1-5 clearfix">
+   							<li class="icon1">
+   								<a href="#"></a>
+								<p>手机认证</p>
+   							</li>
+    						<li class="act icon2">
+    							<a href="#"></a>
+    							<p>绑定银行卡</p>
+    						</li>
+                            <li class="act icon3">
+                                <a href="#"></a>
+                                <p>绑定邮箱</p>
+                            </li>
+    					</ul>
+    					<div class="sidebar">
+				    		<div class="leftbar flearfix">
+				    			<ul class="barul">
+                                    <li >
+                                        <a href="accountCenter.html">
+                                            <p>账户中心</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="financialDetails.html">
+                                            <p>资金明细</p>
+                                        </a>
+                                    </li>
+				    				<li class="current">
+				    					<p>投资管理</p>
+                                        <ol class="barOL" style="display:block">
+                                            <li><a href="productInvestment.html">产品管理</a></li>
+                                            <li><a href="standardInvestment.html">散标投资</a></li>
+                                            <li><a href="creditorInvestment.html">债权转让</a></li>
+                                            <li><a href="experienceInvestment.html">体验标</a></li>
+                                            <li class="act"><a href="autoInvest.html">自动投标</a></li>
+                                        </ol>
+                                    </li>
+				    				<li>
+				    					<p>个人管理</p>
+                                        <ol class="barOL">
+                                            <li><a href="messageCenter.html">消息中心</a></li>
+                                            <li><a href="safeCenter.html">安全中心</a></li>
+                                        </ol>
+				    				</li>
+				    				<li>
+				    					<p>我的福利</p>
+                                        <ol class="barOL" >
+                                            <li><a href="">活动列表</a></li>
+                                            <li><a href="inviteFriends.html">邀请好友</a></li>
+                                            <li><a href="experienceGold.html">体验金</a></li>
+                                            <li><a href="coupon.html">加息券</a></li>
+                                        </ol>
+				    				</li>
+				    				<li>
+				    					<p>企业会员</p>
+				    					<ol class="barOL">
+				    						<li><a href="businessAccount.html">企业账户</a></li>
+				    						<li><a href="needBorrow.html">我要借款</a></li>
+				    						<li><a href="myBorrow.html">我的借款</a></li>
+				    					</ol> 
+				    				</li>
+				    			</ul>
+				    		</div>
+				    	</div>
+    				</div>
+    				<div class="left accountRight">
+    					<div class="rightHeader clearfix">
+    						<p class="left ml-2"> 我的账户 > 投资管理 > <a href="autoInvest.html" class="act">自动投标</a></p>
+    					</div>
+    					<div class="rightContent" style="padding:0;">
+                            <div class="investmentTab ">
+                                <div class="investmentHd">
+                                    <ul class="clearfix">
+                                        <li class="current">自动投标</li>
+                                    </ul>
+                                </div>
+                                <div class="investmentBd">
+                                    <ul>
+                                        <li style="display:block;">
+                                            <div class="h-20" >
+                                                <table class="tableBase">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="125">状态</th>
+                                                            <th width="137">投资项目</th>
+                                                            <th width="138">投资期限</th>
+                                                            <th width="140">预期年化收益率</th>
+                                                            <th width="145">投资金额</th>
+                                                            <th width="148">操作</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="align-c">
+                                                        <tr>
+                                                            <td>
+                                                                <div class="clearfix ml-1">
+                                                                    <div class="switchV left default"  data="1" >
+                                                                        <span class="switchBtn"></span>
+                                                                    </div>
+                                                                    <label class="left labelText ml-1">已开启</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>产品，散标</td>
+                                                            <td>1-90(天),1-3(月)</td>
+                                                            <td>10% - 15%</td>
+                                                            <td>200000000000元</td>
+                                                            <td>
+                                                                <a href="javascript:;" class="autoRevise">修改</a>
+                                                                <a href="javascript:;" class="autoDel">删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="clearfix ml-1">
+                                                                    <div class="switchV left"  data="1" >
+                                                                        <span class="switchBtn"></span>
+                                                                    </div>
+                                                                    <label class="left labelText ml-1">未开启</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="clearfix ml-1">
+                                                                    <div class="switchV left"  data="1" >
+                                                                        <span class="switchBtn"></span>
+                                                                    </div>
+                                                                    <label class="left labelText ml-1">未开启</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>123</td>
+                                                            <td>45</td>
+                                                            <td>667</td>
+                                                            <td>77</td>
+                                                            <td>77</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="autoClick" >
+                                        <img src="images/autoIcon.png">
+                                        <p>添加自动投标</p>
+                                    </div>
+                                    <div class="autoBox" style="display:none;">
+                                        <div class="autoInfo">
+                                            <div class="autoHd">
+                                                <div class="clearfix">
+                                                    <div class="switchV left  mt-1-5"  data="1" >
+                                                        <span class="switchBtn"></span>
+                                                    </div>
+                                                    <label class="left labelText ml-1">未开启</label>
+                                                </div>
+                                            </div>
+                                            <div class="autoBd">
+                                                <form>
+                                                    <div class="clearfix">
+
+                                                        <div class="rowItems">
+                                                            <span>投资项目:</span>
+                                                            <input type="checkbox"/><label>产品</label>
+                                                            <input type="checkbox"/><label>散标</label>
+                                                        </div>
+
+                                                        <div class="rowSum">
+                                                            <span>投资金额:</span>
+                                                            <input type="radio" name="sum" /><label class="mr-6">按金额（每次）<input type="text" /> ≥100的整倍数</label>
+                                                            <input type="radio" name="sum" /><label>按账户余额 ≥100的整倍数 </label>
+                                                        </div>
+
+                                                        <div class="mb-2-5 selectBox autoIncome clearfix">
+                                                            <label class="mr-1-5 left">预期年化收益率: </label>
+                                                            <div class="selectCon left">
+                                                                <span>不限制</span>
+                                                                <ul>
+                                                                    <li>不限制</li>
+                                                                    <li>6%～8%</li>
+                                                                    <li>8%～10%</li>
+                                                                    <li>11%～13%</li>
+                                                                    <li>13%～15%</li>
+                                                                </ul>
+                                                            </div>
+                                                            <s class="ml-1-5">*即为当前设置利率（包含）及以上皆可投资</s>
+                                                        </div>
+
+                                                        <div class="rowTime clearfix">
+                                                            <span class="investTime left">投资期限:</span>
+                                                            <input type="checkbox" class="left"/>
+                                                            <label class="left mr-1">天</label>
+                                                            <div class="left mb-2 selectBox">
+                                                                <div class="selectCon">
+                                                                    <span>不限制</span>
+                                                                    <ul>
+                                                                        <li>不限制</li>
+                                                                        <li>1-30(天)</li>
+                                                                        <li>1-45(天)</li>
+                                                                        <li>1-60(天)</li>
+                                                                        <li>1-90(天)</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <input type="checkbox" class="left"/>
+                                                            <label class="left mr-1">月</label>
+                                                            <div class="left mb-2 selectBox">
+                                                                <div class="selectCon">
+                                                                    <span>不限制</span>
+                                                                    <ul>
+                                                                        <li>不限制</li>
+                                                                        <li>1个月</li>
+                                                                        <li>1-2个月</li>
+                                                                        <li>1-3个月</li>
+                                                                        <li>1-6个月</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="btnAuto">
+                                            <a href="javascript:;" class="rowBtn">确  定</a>
+                                            <a href="javascript:;" class="rowBtnEsc ml-1-5">取 消</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="autoExplain mt-1">
+                                        <h6>自动投标说明</h6>
+                                        <div class="">
+                                            <p>1、  自动投标最多设置三条，启用一条两条备用，可修改删除。</p>
+                                            <p>2、  投资项目、投资期限可设置多选</p>
+                                            <p>3、  天标是指：以天数作为单位的标的；月标是指：以月份作为单位的标的</p>
+                                            <p>4、  自动投标是根据用户和标的信息对应匹配的，用户的抓取为随机抓取</p>
+                                            <p>5、  预期年化收益率设置为一个定值百分比（即当前设置值百分比及其以上利率皆可投），不限制即为所有可投标的皆可投资不考虑年化收益率。</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+    					</div>
+    				</div>
+    			</div>
+	    	</div>
+
+            <div class="footerBox">
+                <div class="footerMa clearfix">
+                    <div class="footerLf left">
+                        <p>400-820-3122</p>
+                        <span class="pl-1">客服热线 (工作日：9:00 - 18:00) </span>
+                    </div>
+                    <div class="footerCt left">
+                        <div class="pl-8-5 footerCtP mb-2">
+                            关注我们:
+                            <a href="javascript:;" class="ml-1 weibo"><img src="images/weibo.png"></a>
+                            <a href="javascript:;" class="ml-1 weChat">
+                                <img src="images/weixin.png">
+                                <div class="weChatDiv">
+                                    <img src="images/u2erweima.png" />
+                                    <p>关注订阅号</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <ul class="clearfix pl-8-5">
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">联系我们</a></li>
+                            <li><a href="javascript:;">走进悠兔</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerRt left">
+                        <div class="download">
+                            <a href="appDownload.html">
+                                <i></i>
+                                <p>下载悠兔理财APP</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyRight">
+                    <p>沪ICP备16007640号-2 | Copyright © 2016 u2licai. All rights reserved</p>
+                </div>
+            </div>
+
+            <!--右边的悬浮按钮-->
+            <div class="baseRight">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>计算器</dd>
+                            </dl>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>APP下载</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>意见反馈</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>联系客服</dd>
+                            </dl>
+                        </a>
+                    </li>-->
+                    <li class="topto" style="display:none;">
+                        <dl>
+                            <dt></dt>
+                            <dd>回到顶部</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+    	</div>
+
+
+        <!-- 充值状态弹窗 -->
+        <div class="auto-layer">
+            <div class="layerHeader">
+                <p>提示</p>
+                <i></i>
+            </div>
+            <div class="rechContent">
+                <div class="autoLayerCon">
+                    <p>确定要删除吗？</p>
+                </div>
+                <div class="rechBtn">
+                    <a href="javascript:;">确定</a>
+                    <a href="javascript:;">取消</a>
+                </div>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="/js/sea/sea.js"></script>
+    <script type="text/javascript" src="/js/sea-config.js"></script>
+    <script type="text/javascript">
+	    $(function() {
+	    	seajs.use(['style','layer','layer_css'],function(obj){
+            	obj.sidebarTab();
+                obj.baseSide()
+
+                //删除按钮弹窗
+                $('.autoDel').on("click",function(){
+                    var moneyLayer = layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        shade: [0.8, '#393D49'],
+                        shadeClose: false,
+                        skin: 'yourclass',
+                        area: ['500px', '305px'],
+                        content: $('.auto-layer')
+                    });
+
+                    $('.rechBtn a,.layerHeader i').on('click', function(){
+                        layer.close(moneyLayer);
+                    });
+                })
+
+        	})
+
+            //点击显示和关闭
+
+            $('.autoClick').click(function(){
+                $('.autoBox').show();
+            })
+            $('.autoRevise').click(function(){
+                $('.autoBox').show();
+            })
+            $('.rowBtnEsc').click(function(){
+                $('.autoBox').hide();
+            })
+
+
+
+            //模拟下拉列表
+
+            $('.selectBox span').click(function(event){
+                event.stopPropagation();
+                $(this).next().toggle().parents('.selectBox').siblings('.selectBox').find('ul').hide();
+            });
+            $('.selectBox ul>li').click(function(event){
+                var spanLi = $(this).html();
+                $(this).parent("ul").prev('span').html(spanLi);
+                $(this).parent("ul").toggle();
+            });
+            $(document).click(function(event) {
+                event.stopPropagation();
+                $('.selectBox ul').hide();
+            });
+
+
+            //开关按钮代码
+            $('.switchV').click(function () {
+                var _this = $(this);
+                var data = $(this).attr('data');
+                if (data == 1) //执行开关操作
+                {
+                    $(this).children('span').animate({left: '20px'}, 500,function(){
+                        $(this).css('backgroundColor','#ff9b1d');
+                        _this.css({background:'#feeddd',borderColor:'#ff7b00'}).attr('data', 0).next().html('已开启');
+                        //给其他的按钮定义一个变量
+                        var otherTr = _this.parents('tr').siblings('tr').find('.switchV');
+                        //让点击这一个其他的显示变为未启动
+                        otherTr.attr('data',1).children('span').animate({left: '0px'}, 500,function(){
+                            $(this).css('backgroundColor','#b5b5b5');
+                            otherTr.css({background:'#e4e4e4',borderColor:'#c7c7c7'}).attr('data', 1).next().html('未开启');
+                        });
+                    });
+                }
+                else {
+                    $(this).children('span').animate({left: '0px'}, 500,function(){
+                        $(this).css('backgroundColor','#b5b5b5');
+                        _this.css({background:'#e4e4e4',borderColor:'#c7c7c7'}).attr('data', 1).next().html('未开启');
+                    });
+
+                }
+            })
+o
+
+
+	    });	    
+    </script>
+    </body>
+</html>

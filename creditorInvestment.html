@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>债权管理</title>
+		<link type="text/css" rel="stylesheet" href="css/screen.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    </head>
+    <body>
+    	<div class="wrapBox">
+	    	<div class="topDiv">
+	    		<div class="topBox clearfix">
+	    			<div class="topLeft left">
+	    				<p class="left">客服热线：</p>
+	    				<img src="images/iphone.png" height="18" width="128">
+	    				<span>(工作日9:00 - 18:00)  </span>
+	    			</div>
+	    			<div class="topRight right">
+	    				<ul>
+	    					<li class="act"><a href="logoin.html">登录</a></li>
+	    					<li class="act"><a href="register.html">免费注册</a></li>
+	    					<li><a href="#">我的账户</a></li>
+	    					<li><a href="#">帮助中心</a></li>
+	    					<li><a href="#">联系我们</a></li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="header">
+	    		<div class="inHeader clearfix">
+	    			<img class="left" src="images/logo.png" height="64" width="367">
+	    			<ul class="right navList">
+	    				<li><a href="#">首页</a></li>
+	    				<li><a href="#">我要投资</a></li>
+	    				<li><a href="#">走进悠兔</a></li>
+	    				<li><a href="#">公司动态</a></li>
+	    			</ul>
+	    		</div>
+	    	</div>
+
+	    	<div class="account">
+    			<div class="myAccount clearfix">
+    				<div class="left accountLeft">
+    					<h5>用户名：15190561722</h5>
+    					<div class="headImg">
+    						<img src="images/headimg.png">
+    					</div>
+   						<ul class="usericon mt-1-5 clearfix">
+   							<li class="icon1">
+   								<a href="#"></a>
+								<p>手机认证</p>
+   							</li>
+    						<li class="act icon2">
+    							<a href="#"></a>
+    							<p>绑定银行卡</p>
+    						</li>
+                            <li class="act icon3">
+                                <a href="#"></a>
+                                <p>绑定邮箱</p>
+                            </li>
+    					</ul>
+    					<div class="sidebar">
+				    		<div class="leftbar flearfix">
+				    			<ul class="barul">
+                                    <li >
+                                        <a href="accountCenter.html">
+                                            <p>账户中心</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="financialDetails.html">
+                                            <p>资金明细</p>
+                                        </a>
+                                    </li>
+				    				<li class="current">
+				    					<p>投资管理</p>
+                                        <ol class="barOL" style="display:block">
+                                            <li><a href="productInvestment.html">产品管理</a></li>
+                                            <li><a href="standardInvestment.html">散标投资</a></li>
+                                            <li  class="act"><a href="creditorInvestment.html">债权转让</a></li>
+                                            <li><a href="experienceInvestment.html">体验标</a></li>
+                                            <li><a href="autoInvest.html">自动投标</a></li>
+                                        </ol>
+                                    </li>
+				    				<li>
+				    					<p>个人管理</p>
+                                        <ol class="barOL">
+                                            <li><a href="messageCenter.html">消息中心</a></li>
+                                            <li ><a href="safeCenter.html">安全中心</a></li>
+                                        </ol>
+				    				</li>
+				    				<li>
+				    					<p>我的福利</p>
+                                        <ol class="barOL" >
+                                            <li><a href="">活动列表</a></li>
+                                            <li><a href="inviteFriends.html">邀请好友</a></li>
+                                            <li><a href="experienceGold.html">体验金</a></li>
+                                        </ol>
+				    				</li>
+				    				<li>
+				    					<p>企业会员</p>
+				    					<ol class="barOL">
+				    						<li><a href="businessAccount.html">企业账户</a></li>
+				    						<li><a href="needBorrow.html">我要借款</a></li>
+				    						<li><a href="myBorrow.html">我的借款</a></li>
+				    					</ol> 
+				    				</li>
+				    			</ul>
+				    		</div>
+				    	</div>
+    				</div>
+    				<div class="left accountRight">
+    					<div class="rightHeader clearfix">
+    						<p class="left ml-2"> 我的账户 > 投资管理 > <a href="creditorInvestment.html" class="act">债权转让</a></p>
+    					</div>
+    					<div class="rightContent" style="padding:0;">
+
+                            <div class="investmentTab ">
+                                <div class="investmentHd">
+                                    <ul class="clearfix">
+                                        <li class="current">可转让</li>
+                                        <li>转让中</li>
+                                        <li>已转让</li>
+                                        <li>转让记录</li>
+                                    </ul>
+                                </div>
+                                <div class="investmentBd clearfix">
+                                    <ul>
+                                        <li style="display:block;">
+                                            <div class="investForm mb-1-5">
+                                                <form>
+                                                    <label>交易时间： </label>
+                                                    <input type="text"><span> 到 </span><input type="text">
+                                                    <a href="javascript:;">搜 索</a>
+                                                    <button value="全部">全部</button>
+                                                </form>
+                                            </div>
+                                            <div class="h-50">
+                                                <table class="tableBase">
+                                                    <thead>
+                                                    <tr>
+                                                        <th width="165">投资日期</th>
+                                                        <th width="190">标的名称</th>
+                                                        <th width="140">待收本息</th>
+                                                        <th width="136">预期年化收益率</th>
+                                                        <th width="130">剩余时间</th>
+                                                        <th width="165">操作</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="align-c">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="javascript:;" class="assignBtn helpColor1">申请转让</a>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <ol class="paging" >
+                                                <li><a href="#"><</a></li>
+                                                <li class="current"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">></a></li>
+                                            </ol>
+
+                                            <div class="infoCreditor"></div>
+                                        </li>
+                                        <li>
+                                            <div class="investForm mb-1-5">
+                                                <form>
+                                                    <label>交易时间： </label>
+                                                    <input type="text"><span> 到 </span><input type="text">
+                                                    <a href="javascript:;">搜 索</a>
+                                                    <button value="全部">全部</button>
+                                                </form>
+                                            </div>
+                                            <div class="h-50">
+                                                <table class="tableBase">
+                                                    <thead>
+                                                    <tr>
+                                                        <th width="100">转让日期</th>
+                                                        <th width="140">标的名称</th>
+                                                        <th width="100">债权价值</th>
+                                                        <th width="110">转让价格</th>
+                                                        <th width="120">预期年化收益率</th>
+                                                        <th width="120">剩余时间</th>
+                                                        <th width="80">募集时间</th>
+                                                        <th width="80">进度</th>
+                                                        <th width="92">操作</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="align-c">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="javascript:;" class="assignCancelBtn helpColor1">取消转让</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <ol class="paging" >
+                                                <li><a href="#"><</a></li>
+                                                <li class="current"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">></a></li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <div class="investForm mb-1-5">
+                                                <form>
+                                                    <label>交易时间： </label>
+                                                    <input type="text"><span> 到 </span><input type="text">
+                                                    <a href="javascript:;">搜 索</a>
+                                                    <button value="全部">全部</button>
+                                                </form>
+                                            </div>
+                                            <div class="h-50">
+                                                <table class="tableBase">
+                                                    <thead>
+                                                    <tr>
+                                                        <th width="120">转让日期</th>
+                                                        <th width="180">标的名称</th>
+                                                        <th width="120">债权价值</th>
+                                                        <th width="120">转让价格</th>
+                                                        <th width="140">手续费</th>
+                                                        <th width="140">实收金额</th>
+                                                        <th width="100">操作</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="align-c">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="javascript:;" class="assignDetail helpColor1">转让明细</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <ol class="paging" >
+                                                <li><a href="#"><</a></li>
+                                                <li class="current"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">></a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="investForm mb-1-5">
+                                                <form>
+                                                    <label>交易时间： </label>
+                                                    <input type="text"><span> 到 </span><input type="text">
+                                                    <a href="javascript:;">搜 索</a>
+                                                    <button value="全部">全部</button>
+                                                </form>
+                                            </div>
+                                            <div class="h-50">
+                                                <table class="tableBase">
+                                                    <thead>
+                                                    <tr>
+                                                        <th width="130">转让日期</th>
+                                                        <th width="210">标的名称</th>
+                                                        <th width="120">债权价值</th>
+                                                        <th width="120">转让价格</th>
+                                                        <th width="120">手续费</th>
+                                                        <th width="120">实收金额</th>
+                                                        <th width="100">状态</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="align-c">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="helpColor1">转让中</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="helpColor1">转让成功</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="helpColor1">转让失败</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="helpColor1">转让撤回</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <ol class="paging" >
+                                                <li><a href="#"><</a></li>
+                                                <li class="current"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">></a></li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="creditorTips">
+                                    <h5>*温馨提示: </h5>
+                                    <ul>
+                                        <li><span>*</span> 用户投标成功并在审核通过后，开始计算可转让日期，不同标的会有不同锁定期，超过锁定期，用户可以提出债权转让。</li>
+                                        <li><span>*</span> 债权转让时，如果当前债权逾期且仍未还款，则该笔债权不可转让。</li>
+                                        <li><span>*</span> 限制转让时间必须距离下一个还款日>72小时。</li>
+                                        <li><span>*</span> 债权转让时该笔债权的剩余期数<1期，则该笔债权不可转让。</li>
+                                        <li><span>*</span> 债权转让金额必须>=100元。</li>
+                                    </ul>
+                                </div>
+                            </div>
+    					</div>
+    				</div>
+    			</div>
+	    	</div>
+
+            <div class="footerBox">
+                <div class="footerMa clearfix">
+                    <div class="footerLf left">
+                        <p>400-820-3122</p>
+                        <span class="pl-1">客服热线 (工作日：9:00 - 18:00) </span>
+                    </div>
+                    <div class="footerCt left">
+                        <div class="pl-8-5 footerCtP mb-2">
+                            关注我们:
+                            <a href="javascript:;" class="ml-1 weibo"><img src="images/weibo.png"></a>
+                            <a href="javascript:;" class="ml-1 weChat">
+                                <img src="images/weixin.png">
+                                <div class="weChatDiv">
+                                    <img src="images/u2erweima.png" />
+                                    <p>关注订阅号</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <ul class="clearfix pl-8-5">
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">联系我们</a></li>
+                            <li><a href="javascript:;">走进悠兔</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerRt left">
+                        <div class="download">
+                            <a href="appDownload.html">
+                                <i></i>
+                                <p>下载悠兔理财APP</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyRight">
+                    <p>沪ICP备16007640号-2 | Copyright © 2016 u2licai. All rights reserved</p>
+                </div>
+            </div>
+
+            <!--右边的悬浮按钮-->
+            <div class="baseRight">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>计算器</dd>
+                            </dl>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>APP下载</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>意见反馈</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="javascript:;">
+                            <dl>
+                                <dt></dt>
+                                <dd>联系客服</dd>
+                            </dl>
+                        </a>
+                    </li>-->
+                    <li class="topto" style="display:none;">
+                        <dl>
+                            <dt></dt>
+                            <dd>回到顶部</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--申请转让的弹窗-->
+            <div class="assignAlter">
+                <div class="assignMain">
+                    <div class="layerHeader">
+                        <p>申请转让</p>
+                        <i></i>
+                    </div>
+
+                    <div class="assignnt">
+                        <div>
+                            <p>标的名称：<span>XXXXXXXXXXX</span></p>
+                        </div>
+                        <div class="clearfix">
+                            <p class="left">预期年化收益率：<span class="helpColor1">12.00% </span></p>
+                            <p class="left ml-8">借款期限：<span>12个月</span></p>
+                        </div>
+                        <div class="clearfix">
+                            <p class="left">剩余时间：<span class="">6个月23天 </span></p>
+                            <p class="left ml-10-5">债权价值：<span class="helpColor1">12222.23元</span></p>
+                        </div>
+                        <div class="clearfix">
+                            <div class="left">
+                                <label >转让系数：</label>
+                                <select style="width:100px;height:32px;">
+                                    <option value="100%">100%</option>
+                                    <option value="90%">90%</option>
+                                    <option value="80%">80%</option>
+                                    <option value="70%">70%</option>
+                                </select>
+                            </div>
+                            <p class="left ml-7" style="line-height:32px;">代收金额：<span class="helpColor1">12222.23元</span></p>
+                        </div>
+                        <div class="clearfix">
+                            <div class="left">
+                                <label >转让价格：</label>
+                                <input style="width:100px;height:32px;" type="text">
+                            </div>
+                            <p class="left ml-7" style="line-height:32px;">转让费用：<span class="helpColor1">12222.23元</span></p>
+                        </div>
+                        <div class="clearfix">
+                            <div class="left pl-1-5">
+                                <label >验证码：</label>
+                                <input style="width:100px;height:32px;" type="text">
+                            </div>
+                            <p class="left ml-1 authCode" style="line-height:32px;">4rgb</p>
+                        </div>
+                    </div>
+
+                     <div>
+                         <a href="javascript:;" class="assignntBtn">申请转让</a>
+                     </div>
+                </div>
+            </div>
+
+            <!--转让成功失败弹窗-->
+            <div class="assignSure" >
+                <div class="assignSureMain">
+                    <div class="layerHeader">
+                        <p>提示</p>
+                        <i></i>
+                    </div>
+                    <div class="assignCon">
+                        <!--<p class="w-10"><i class="sucIcon"></i>申请债转失败</p>-->
+                        <p class="w-10"><b class="failIcon"></b>申请债转失败</p>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="assignntSureBtn">确 认</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--取消转让弹窗-->
+            <div class="assignCancelMain" >
+                <div class="assignCancelCon">
+                    <div class="layerHeader">
+                        <p>提示</p>
+                        <i></i>
+                    </div>
+                    <p class="cancelInfo">是否确定取消转让？</p>
+                    <div class="cancelBtnFot">
+                        <a href="javascript:;" class="cancelSure">确 认</a>
+                        <a href="javascript:;" class="cancelCan">取 消</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--已转让的转让明细结构-->
+            <div class="assignLayerBox">
+                <div class="assignLayerCon">
+                    <div class="layerHeader">
+                        <p class="align-c">转让明细</p>
+                        <i></i>
+                    </div>
+                    <div class="assignConMain clearfix">
+                        <div class="h-36">
+                            <table class="tableBase">
+                                <thead>
+                                <tr>
+                                    <th width="240">用户名 </th>
+                                    <th width="235">金额</th>
+                                    <th width="220">协议</th>
+                                </tr>
+                                </thead>
+                                <tbody class="align-c">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="debtTransferAgreement.html" target="_blank" class="helpColor1" style="text-decoration: underline;">查看</a>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <ol class="paging detailList"  style="">
+                            <li><a href="#"><</a></li>
+                            <li class="current"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">></a></li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="assignLoading"></div>
+
+    	</div>
+        <!--查看弹窗的内容页面-->
+        <div class="detailLayer">
+            <div class="layerHeader">
+                <p class="align-c">应收详情</p>
+                <i></i>
+            </div>
+            <div class="detailContent clearfix">
+                <div class="h-42">
+                    <table class="tableBase">
+                        <thead>
+                        <tr>
+                            <th width="83">标题</th>
+                            <th width="176">投资时间</th>
+                            <th width="125">投资金额（元）</th>
+                            <th width="162">预期年化</th>
+                            <th width="134">期限</th>
+                            <th width="155">预期收益（元）</th>
+                        </tr>
+                        </thead>
+                        <tbody class="align-c">
+                        <tr>
+                            <td>4</td>
+                            <td>¥100.00</td>
+                            <td>¥20.00</td>
+                            <td>2016-07-01</td>
+                            <td>--</td>
+                            <td>未还</td>
+                        </tr>
+                        <tr class="c9">
+                            <td>4</td>
+                            <td>¥100.00</td>
+                            <td>¥20.00</td>
+                            <td>2016-07-01</td>
+                            <td>--</td>
+                            <td>已还</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ol class="paging detailList"  style="">
+                    <li><a href="#"><</a></li>
+                    <li class="current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">></a></li>
+                </ol>
+            </div>
+        </div>
+    <script type="text/javascript" src="/js/sea/sea.js"></script>
+    <script type="text/javascript" src="/js/sea-config.js"></script>
+    <script type="text/javascript">
+	    $(function() {
+	    	seajs.use(['style'],function(obj){
+            	obj.sidebarTab();
+                obj.baseSide();
+                obj.mainContent();
+
+                //点击申请转让弹窗
+                $('.assignBtn').click(function(){
+                    $('.assignAlter').show();
+                })
+
+                $('.assignAlter i').click(function(){
+                    $('.assignAlter').hide();
+                })
+
+                $('.assignntBtn').click(function(){
+
+                    $('.assignLoading').show();
+                    setTimeout(function(){
+                        $('.assignLoading').hide();
+                        $('.assignAlter').hide();
+                        $('.assignSure').show();
+                    },3000)
+
+                })
+
+                $('.assignSure i').click(function(){
+                    $('.assignSure').hide();
+                })
+
+
+                //取消转让的弹窗按钮
+                $('.assignCancelBtn').click(function(){
+                    $('.assignCancelMain').show()
+                })
+
+                $('.cancelCan').click(function(){
+                    $('.assignCancelMain').hide()
+                })
+                $('.assignCancelMain i').click(function(){
+                    $('.assignCancelMain').hide()
+                })
+
+
+                //已转让的的按钮事件
+                $('.assignDetail').click(function(){
+                    $('.assignLayerBox').show();
+                })
+                $('.assignLayerBox i').click(function(){
+                    $('.assignLayerBox').hide();
+                })
+
+
+        	})
+
+
+	    });	    
+    </script>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>老虎机测试</title>
+		<link href="http://cdn.staticfile.org/typo.css/1.1/typo.min.css" rel="stylesheet"> 
+	<script id="jquery_183" type="text/javascript" class="library" src="js/jquery-1.11.2.min.js"></script>
+	<style>
+		.box {width: 950px; height: 282px; overflow: hidden; background: url(http://anhui.sinaimg.cn/2014/0306/U8377P1276DT20140306165522.jpg) top left no-repeat; position: relative; margin: 0 auto;}
+.box > ul.show {height: 182px; overflow: hidden; width: 430px; position: absolute; left: 33px; top: 52px;}
+.box > ul.show > li {float: left; background-image: url(http://anhui.sinaimg.cn/2014/0306/U8377P1276DT20140306165020.jpg); background-repeat: repeat-y; background-position: 0 0; width: 136px; height: 546px; margin-right: 7px;}
+.box > .bar {background-image: url(http://anhui.sinaimg.cn/2014/0306/U8377P1276DT20140306165019.png); background-repeat: no-repeat; background-position: 0 0; width: 67px; height: 91px; position: absolute; left: 475px; top: 5px;}
+.box > .bar_open {background-position: 0 -91px !important; top: 130px;}
+	</style>
+	</head>
+	<body>
+<div class="box">
+    <ul class="show">
+        <li style="background-position: 0 0;"></li>
+        <li style="background-position: 0 0px;"></li>
+        <li style="background-position: 0 0px;"></li>
+    </ul>
+    <a href="" class="bar" onclick="return false;"></a>
+</div>
+	</body>
+</html>
+<script>
+	$(function(){
+    $('.box > .bar').click(function(){
+        $('.box > .bar').addClass('bar_open');
+
+        slot_game({
+            param: $('.box > ul.show'),
+            gold: 3, //设置中奖信息，1为吊坠，2为充电宝，3为加息券
+            goldto: 0, //设置奖品滚动的距离
+            incr: 3, //单位时间内的滚动速度
+            success: function(){
+                $('.box > .bar').removeClass('bar_open');
+				if(this.gold == 1){
+							alert("中了个棒棒糖")
+						}else if(this.gold == 2){
+							alert("中了个大熊")
+						}else{
+							alert("啥也没中到")
+						}
+                setTimeout(function(){
+                    //return true; // 如果游戏结束，重置老虎机就屏蔽此行
+                    $('.box > ul.show').children('li:nth-child(1)').css('background-position', '0 0px');
+                    $('.box > ul.show').children('li:nth-child(2)').css('background-position', '0 0px');
+                    $('.box > ul.show').children('li:nth-child(3)').css('background-position', '0 0px');
+                }, 100);
+                
+            }
+        });
+    });
+});
+
+function slot_game (options) {
+    var defaults = {
+        param: null,
+        gold: 2,
+        goldto: 0,
+        loop: 3,
+        incr: 3,
+        success: function(){return true;}
+    };
+
+    var opts = $.extend(defaults, options);
+
+    var n1 = parseInt(opts.param.children('li:nth-child(1)').css('background-position').split(" ")[1]);
+    var n2 = parseInt(opts.param.children('li:nth-child(2)').css('background-position').split(" ")[1]);
+    var n3 = parseInt(opts.param.children('li:nth-child(3)').css('background-position').split(" ")[1]);
+
+    
+    var na = false;
+    var nb = false;
+    var nc = false;
+
+    var param_height = opts.param.children('li').height();
+
+    var k = param_height * opts.loop;
+
+    
+    if (opts.gold == 1) {
+
+    	t1 = t2 = t3 = opts.goldto;
+
+    } else if(opts.gold == 2){
+
+    	t1 = t2 = t3 = (param_height / 3) * 2;
+
+    }else{
+
+    	t1 = 0; t2 = (param_height / 3); t3 = (param_height / 3) * 2;
+
+    }
+
+    var timer = setInterval(function(){
+        if (n1 <= -k-t1){
+        	na = true;
+        } else {
+        	n1 -= opts.incr;
+        }
+        if (n2 <= -k-param_height-t2){ 
+        	nb = true; 
+        }else {
+        	n2 -= opts.incr;
+        }
+        if (n3 <= -k-param_height-t3) {
+            clearInterval(timer);
+            opts.success();
+        } else {
+            n3 -= opts.incr;
+        }
+
+        na ? 0 : opts.param.children('li:nth-child(1)').css({'background-position':'0 ' + n1 + 'px'});
+        nb ? 0 : opts.param.children('li:nth-child(2)').css({'background-position':'0 ' + n2 + 'px'});
+        nc ? 0 : opts.param.children('li:nth-child(3)').css({'background-position':'0 ' + n3 + 'px'});
+        
+    }, 2);
+}
+</script>
